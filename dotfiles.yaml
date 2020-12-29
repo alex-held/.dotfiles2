@@ -1,6 +1,6 @@
 ---
 - hosts: dotfiles
-  gather_facts: no
+  gather_facts: yes
   roles:
     - { role: homebrew, tags: ['homebrew'] }
     - { role: dotfiles, tags: ['dotfiles'] }
