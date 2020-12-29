@@ -1,0 +1,231 @@
+---
+user: jcf
+
+dotfiles:
+  apps:
+    #- adium
+    #- airfoil
+    #- caffeine
+    #- colloquy
+    #- dropbox
+    #- evernote
+    #- flip4mac
+    #- github
+    - google-chrome-dev
+    #- google-drive
+    #- google-earth
+    #- google-hangouts
+    #- handbrake
+    #- hazel
+    #- heroku-toolbelt
+    #- istat-menus
+    - iterm2
+    #- launchbar
+    #- livereload
+    #- mactex
+    #- omnifocus
+    #- skype
+    #- slack
+    #- sonos
+    #- spotify
+    #- subler
+    #- transmit
+    #- virtualbox
+    #- visualvm
+    #- vlc
+    #- vmware-fusion
+  
+  packages:
+    - ack
+    - chromedriver
+    - coreutils
+    # - ctags # Disabled because we have a custom ctags install
+    - ditaa
+    - dnsmasq
+    - dos2unix
+    - ec2-api-tools
+    - editorconfig
+    - ffmpeg
+    - graphviz
+    - htop-osx
+    - iftop
+    - ispell
+    - libxml2
+    - libxslt
+    - lorem
+    - mercurial
+    - mobile-shell
+    - moreutils
+    - phantomjs # TODO Move into Javascript/Node.js land?
+    - pstree
+    - pv
+    - rlwrap
+    - siege
+    - sloccount
+    - the_silver_searcher
+    - tmux
+    - tor
+    - trash
+    - tree
+    - vimpager
+    - wget
+    - wrk
+    - xz
+    
+  fonts:
+    - font-anonymous-pro
+    - font-babelstone-han
+    - font-code2000
+    - font-code2001
+    - font-code2002
+    - font-cousine
+    - font-dejavu-sans
+    - font-fira-sans
+    - font-freesans
+    - font-inconsolata
+    - font-liberation-sans
+    - font-musica
+    - font-noto-sans
+    - font-pt-mono
+    - font-pt-sans
+    - font-pt-serif
+    - font-quivira
+    - font-source-code-pro
+    - font-source-sans-pro
+    - font-symbola
+    - font-terminus
+    - font-ubuntu
+
+  go:
+    path: ~/Go
+    default_version: 1.4.2
+    versions:
+      - 1.4.2
+    packages:
+      - github.com/nsf/gocode
+
+  haskell:
+    packages:
+      - ghc-mod
+      - goa
+      - hdevtools
+      - lambdabot
+
+  heroku:
+    plugin_repos:
+      - ddollar/heroku-config
+      - heroku/heroku-oauth
+      - heroku/heroku-pg-extras
+      - heroku/heroku-repo
+      - tpope/heroku-binstubs
+      - tpope/heroku-pgbackups-pull
+      - tpope/heroku-remote
+      - tpope/heroku-surrogate
+      - tpope/heroku-wildcards
+
+  javascript:
+    default_version: 0.12.0
+    versions:
+      - 0.10.36
+      - 0.11.16
+      - 0.12.0
+    packages:
+      - express
+      - grunt-cli
+      - gulp
+      - jshint
+      - tern
+
+  # Java Download locations
+  #
+  # http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+  # http://www.oracle.com/technetwork/java/javase/archive-139210.html
+  #
+  # | Version  | URL                                                                          |
+  # |----------+------------------------------------------------------------------------------|
+  # | 7u72-b14 | http://download.oracle.com/otn-pub/java/jdk/7u72-b14/jdk-7u72-macosx-x64.dmg |
+  # | 8u31-b13 | http://download.oracle.com/otn-pub/java/jdk/8u31-b13/jdk-8u31-macosx-x64.dmg |
+  jvm:
+    default_version: 1.8.0.40
+    versions:
+      - { major: '7', minor: '72', patch: 'b14' }
+      - { major: '8', minor: '31', patch: 'b31' }
+      - { major: '8', minor: '40', patch: 'b27' }
+
+  packages:
+    - ack
+    - chromedriver
+    - coreutils
+    # - ctags # Disabled because we have a custom ctags install
+    - ditaa
+    - dnsmasq
+    - dos2unix
+    - ec2-api-tools
+    - editorconfig
+    - ffmpeg
+    - graphviz
+    - htop-osx
+    - iftop
+    - ispell
+    - libxml2
+    - libxslt
+    - lorem
+    - mercurial
+    - mobile-shell
+    - moreutils
+    - phantomjs # TODO Move into Javascript/Node.js land?
+    - pstree
+    - pv
+    - rlwrap
+    - siege
+    - sloccount
+    - the_silver_searcher
+    - tmux
+    - tor
+    - trash
+    - tree
+    - vimpager
+    - wget
+    - wrk
+    - xz
+
+  perl:
+    default_version: 5.21.9
+    versions:
+      - 5.21.9
+
+  python:
+    versions:
+      - 2.7.3
+      - pypy-1.9
+
+  ruby:
+    default_version: 2.1.2
+    packages:
+      - awesome_print
+      - bundler
+      - gem-browse
+      - gem-ctags
+      - pry
+      - rubocop
+    versions:
+      - 2.0.0-p451
+      - 2.1.2
+      - jruby-1.7.12
+
+  scala:
+    default_version: scala-2.11.5
+    versions:
+      - scala-2.11.5
+
+  quicklook:
+    plugins:
+      - betterzipql
+      - qlcolorcode
+      - qlmarkdown
+      - qlprettypatch
+      - qlstephen
+      - quicklook-csv
+      - quicklook-json
+      - suspicious-package
+      - webpquicklook
