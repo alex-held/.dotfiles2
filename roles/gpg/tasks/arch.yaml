@@ -1,0 +1,6 @@
+---
+# Sets up gpg for following Arch distributions:
+# 'Archlinux', 'Antergos', 'Manjaro'
+
+- name: Make sure gpg is installed
+  pacman: name=gpg state=present

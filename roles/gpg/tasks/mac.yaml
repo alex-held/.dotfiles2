@@ -1,0 +1,4 @@
+---
+- name: Install gpg
+  homebrew: name=gpg state=latest
+  tags: update
