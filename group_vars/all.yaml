@@ -4,7 +4,9 @@ user: axh
 dotfiles_user_home: "{{ '~' | expanduser }}"
 dotfiles_home: "{{dotfiles_user_home}}/.dotfiles"
 
-
+full_name: Alexander Held
+git_email: git@alexheld.io
+git_signing_key: "{{ lookup('env','GIT_SIGNING_KEY_ID') }}"
 
 dotfiles:
 
@@ -44,7 +46,7 @@ dotfiles:
     - puppetlabs/puppet
     - rcmdnk/file
     - remotemobprogramming/brew
-    
+
   homebrew_formulae:
     - ack
     - act
@@ -387,7 +389,7 @@ dotfiles:
     - zssh
     - zstd
     - zzuf
-  
+
   # Mac Apps to be installed with homebrew-cask
   homebrew_casks:
     - adoptopenjdk8
@@ -414,7 +416,7 @@ dotfiles:
     - transmission
     - vagrant
     - virtualbox
-    - xquartz  
+    - xquartz
     - 1password
     - visual-studio-code
     - firefox
