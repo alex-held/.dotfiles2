@@ -7,7 +7,7 @@
     - { role: gpg, tags: ['gpg'] }
     - { role: zsh, tags: ['zsh'] }
     - { role: package_manager, tags: ['package_manager'] }
-   # - { role: git, tags: ['git'] }
+    - { role: git, tags: ['git'] }
    # - { role: emacs, tags: ['emacs'] }
    # - { role: vim, tags: ['vim'] }
    # - { role: ssh, tags: ['ssh'] }
