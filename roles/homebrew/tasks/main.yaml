@@ -3,7 +3,15 @@
   homebrew: update_homebrew=yes
   tags: update
 
-- name: Brew base packages
-  homebrew: name={{ item }} state=latest
-  with_items: dotfiles.packages
-  tags: update
+- name: Install mac-specific homebrew formulae
+  homebrew: name={{dotfiles.homebrew_formulae}} state=present
+
+- name: Tap into homebrew/cask-fonts
+  homebrew_tap: tap=homebrew/cask-fonts state=present
+
+- name: Tap into homebrew/cask-versions
+  homebrew_tap: tap=homebrew/cask-versions state=present
+
+- name: Install Mac apps with homebrew cask
+  homebrew_cask: name={{item}} state=present
+  with_items: '{{dotfiles.homebrew_casks}}'

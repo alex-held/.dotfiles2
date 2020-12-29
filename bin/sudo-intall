@@ -1,2 +1,2 @@
 #!/bin/sh
-ansible-playbook -i hosts.ini dotfiles-sudo.yml
+ansible-playbook -i hosts.ini dotfiles-sudo.yaml
