@@ -1,6 +1,22 @@
 ---
-- name: Install prezto
-  script: install_prezto.sh creates="{{ '~/.zprezto' | expanduser}}"
+- name: Clone Prezto
+  git: >
+    repo=https://github.com/sorin-ionescu/prezto.git
+    dest=~/.prezto
+    force=no
+  tags: update
+
+- name: Link runcoms
+  file: src={{ item }} dest=~/.{{ item | basename }} state=link
+  with_items:
+    - ~/.prezto/runcoms/zlogin
+    - ~/.prezto/runcoms/zlogout
+    - ~/.prezto/runcoms/zprofile
+    - ~/.prezto/runcoms/zshenv
+    - ~/.prezto/runcoms/zshrc
+
+#- name: Install prezto
+#  script: install_prezto.sh creates="{{ '~/.zprezto' | expanduser}}"
 
 - name: Link zpreztorc file
   file:

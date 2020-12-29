@@ -1,4 +1,6 @@
 ---
+- name: gather facts
+  setup:
 - import_tasks: debian.yaml
   when: ansible_os_family == "Debian"
 - import_tasks: arch.yaml
@@ -19,7 +21,7 @@
   when: zshrc_stat.stat.exists
 
 - import_tasks: prezto.yaml
-  when: zsh_prezto
+
 
 - name: Copy minimal zshrc
   copy: src=zshrc_minimal dest={{dotfiles_user_home}}/.zshrc

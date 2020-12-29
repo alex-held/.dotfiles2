@@ -1,6 +1,11 @@
 ---
 user: axh
 
+dotfiles_user_home: "{{ '~' | expanduser }}"
+dotfiles_home: "{{dotfiles_user_home}}/.dotfiles"
+
+
+
 dotfiles:
 
   homebrew_taps:

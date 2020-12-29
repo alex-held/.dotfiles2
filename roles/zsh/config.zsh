@@ -8,9 +8,6 @@ unsetopt correct_all
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
 
-# Load functions
-fpath=($ZSH/functions $fpath)
-autoload -U $ZSH/functions/*(:t)
 
 # Options
 setopt LOCAL_OPTIONS # allow functions to have local options
@@ -30,10 +27,10 @@ setopt complete_aliases
 # THEME
 #
 
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-ZSH_THEME="powerlevel10k/powerlevel10k"
+#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+#fi
+#ZSH_THEME="powerlevel10k/powerlevel10k"
 
 
 #
