@@ -3,7 +3,43 @@ user: axh
 
 dotfiles:
 
-  
+  homebrew_taps:
+    - adoptopenjdk/openjdk
+    - azure/functions
+    - bazelbuild/tap
+    - cloudflare/cloudflare
+    - codeclimate/formulae
+    - cvc4/cvc4
+    - dart-lang/dart
+    - derailed/k9s
+    - esolitos/ipa
+    - eth-p/software
+    - git-time-metric/gtm
+    - github/gh
+    - go-task/tap
+    - golangci/tap
+    - goreleaser/tap
+    - hashicorp/tap
+    - homebrew/bundle
+    - homebrew/cask
+    - homebrew/cask-fonts
+    - homebrew/cask-versions
+    - homebrew/core
+    - homebrew/services
+    - instrumenta/instrumenta
+    - isen-ng/dotnet-sdk-versions
+    - jetbrains/utils
+    - johanhaleby/kubetail
+    - kaos/shell
+    - mongodb/brew
+    - mutagen-io/mutagen
+    - nejckorasa/tap
+    - nektos/tap
+    - netlify/netlifyctl
+    - puppetlabs/puppet
+    - rcmdnk/file
+    - remotemobprogramming/brew
+    
   homebrew_formulae:
     - ack
     - act
@@ -22,19 +58,12 @@ dotfiles:
     - azure-cli
     - bash
     - bash-completion
-    - bash-completion@2
+    #- bash-completion@2
     - bat
-    - bat-extras
-    - bats-assert
-    - bats-core
-    - bats-file
-    - bats-support
-    - bazel
+    - eth-p/software/bat-extras
     - bdw-gc
     - bind
     - boost
-    - brew-file
-    - brotli
     - buildkit
     - bumpversion
     - c-ares
@@ -46,9 +75,6 @@ dotfiles:
     - clang-format
     - click
     - cmake
-    - cocoapods
-    - consul
-    - consul-template
     - coredns
     - coreutils
     - croc
@@ -312,7 +338,6 @@ dotfiles:
     - skaffold
     - socat
     - spark
-    - springboot
     - sqlite
     - srt
     - sshpass
