@@ -1,0 +1,33 @@
+---
+- hosts: dotfiles
+  gather_facts: no
+  roles:
+    - { role: homebrew, tags: ['homebrew'] }
+   # - { role: dotfiles, tags: ['dotfiles'] }
+   # - { role: gpg, tags: ['gpg'] }
+   # - { role: zsh, tags: ['zsh'] }
+   # - { role: git, tags: ['git'] }
+   # - { role: emacs, tags: ['emacs'] }
+   # - { role: vim, tags: ['vim'] }
+   # - { role: ssh, tags: ['ssh'] }
+   # - { role: code, tags: ['code'] }
+   # - { role: docker, tags: ['docker'] }
+   # - { role: email, tags: ['email'] }
+   # - { role: nix, tags: ['nix'] }
+   # - { role: dotjs, tags: ['dotjs'] }
+   # - { role: java, tags: ['java'] }
+   # - { role: clojure, tags: ['clojure'] }
+   # - { role: erlang, tags: ['erlang'] }
+   # - { role: haskell, tags: ['haskell'] }
+   # - { role: heroku, tags: ['heroku'] }
+   # - { role: javascript, tags: ['javascript'] }
+   # - { role: go, tags: ['go'] }
+   # - { role: perl, tags: ['perl'] }
+   # - { role: python, tags: ['python'] }
+   # - { role: ruby, tags: ['ruby'] }
+   # - { role: scala, tags: ['scala'] }
+   # - { role: osx, tags: ['osx'] }
+   # - { role: latex, tags: ['latex'] }
+   # - { role: mjolnir, tags: ['mjolnir'] }
+   # - { role: fonts, tags: ['fonts'] }
+   # - { role: quicklook, tags: ['quicklook'] }
