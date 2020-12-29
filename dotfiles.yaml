@@ -5,7 +5,7 @@
     - { role: homebrew, tags: ['homebrew'] }
     - { role: dotfiles, tags: ['dotfiles'] }
    # - { role: gpg, tags: ['gpg'] }
-   # - { role: zsh, tags: ['zsh'] }
+    - { role: zsh, tags: ['zsh'] }
    # - { role: git, tags: ['git'] }
    # - { role: emacs, tags: ['emacs'] }
    # - { role: vim, tags: ['vim'] }
